@@ -439,9 +439,9 @@ color: #f4f4fd;
     top: 0;
     position:fixed;
     background-color: rgba(46, 47, 66, 0.4);
-        /* opacity: 0;
+        opacity: 0;
         visibility: hidden;
-        pointer-events: none; */
+        pointer-events: none; 
     
 
 
@@ -534,7 +534,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     left: 16px;
     top: 50%;
-    transform: translate(-50%);
+    transform: translateY(-50%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -591,9 +591,10 @@ font-size: 12px;
 line-height: 1.16667;
 letter-spacing: 0.04em;
 color: #8e8f99;
+width: 360px;
+height: 16px;
 display: flex;
 align-items: center;
-
 
 }
 
@@ -607,6 +608,8 @@ fill: transparent;
 display: flex;
 align-items: center;
 justify-content: center;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 .checkbox-field {
@@ -618,12 +621,14 @@ justify-content: center;
     background-color: #404bbf;
     border: none;
 }
-.checkbox-label-part {
+.checkbox-link-part {
     line-height: 1.33333;
 text-decoration: underline;
 text-decoration-skip-ink: none;
 color: #4d5ae5;
-
+display: inline-block;
+margin-left: 3px;
+align-items: center;
 }
 
 
@@ -683,4 +688,66 @@ color: #4d5ae5;
  .footer-link:focus {
     background-color: #31D0AA;
 
+}
+
+.subscr-input {
+    border: 1px solid #fff;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+outline: transparent;
+background-color: transparent;
+padding-left: 16px;
+color:#fff;
+}
+.subscr-input::placeholder {
+    font-weight: 400;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+color: #fff;
+
+}
+.footer-button {
+    border-radius: 4px;
+width: 165px;
+height: 40px;
+background-color: #4d5ae5;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+cursor: pointer;
+display: flex;
+margin-left: 24px;
+align-items: center;
+border:none;
+padding-left: 24px;
+
+
+}
+.subscr-title {
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+margin-bottom: 16px;
+
+
+
+}
+.footer-form {
+    margin-left: 80px;
+}
+.subscribtion-form {
+    display: flex;
+}
+.subscr-icon {
+    fill: #fff;
+    display: flex;
+    margin-left: 16px;
 }
